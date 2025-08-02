@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'PMD_font';
+    src:url('fonts/pokemon-md-full-version.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+    }
+*{
+    color:#d5d5d5;
+    margin: 0%;
+}
+body{
+    /* font-family: "PMD_font"; */
+    font-family: 'Gibson', sans-serif;
+    background-color: #9CEACA;
+}
+.quotes{
+    color: #333333;
+}
+.banner {
+    padding: 3em 0;
+    padding: calc((30vh - 5.8em) / 2 + 1px) 0;
+    text-align: center;
+    height: 92px;
+    width: 100%;
+    margin-bottom: 1em;
+    /* use this background when you have an image to display there */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('') center; */
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #d5d5d5 center;
+    background-size: cover;
+    h1{
+        background-color: transparent;
+        border: .2em solid #FFFFFF;
+        color: #FFFFFF;
+        width: fit-content;
+        padding: .5em 1em;
+        margin: 0 auto;
+        font-family: 'Gibson', sans-serif;
+        font-weight: bold;
+        box-shadow: 4px 4px #333333;
+        text-shadow: 4px 4px #333333;
+    }
+}
+.profile{
+    margin: auto;
+    width: 50%;
+    display: grid;
+    align-content: center;
+    grid-template-columns:50% 50%;
+    background-color: #202020;
+}
+.pfp_img{
+    img{
+        width: 100%;
+    }
+}
+@media (max-width:1080px) {
+    .profile{
+    width: 80%;
+    }
+}
+.text{
+    /* empty */
+}
+@media (max-width: 1080px) {
+    body{
+        background-color: goldenrod;
+    }
+}
+.showcase_title{
+    text-align: center;
+    font-size: 25px;
+    display: block;
+}
+.showcase{
+    font-size: larger;
+    margin: 1em auto;
+    background-color: #202020;
+    width: 70%;
+    display: table;
+}
+.project{
+    padding: 1em;
+    width:30%;
+    text-align: center;
+    display: inline-table;
+    img{
+        width: 100%;
+    }
+    h1{
+        width: 100%;
+        margin: auto;
+    }
+    transition-duration: 500ms;
+}
+.project:hover{
+    background: #9CEACA;
+    h1{
+        color: #202020;
+    }
+}
+.redirect_page{
+    background-color: #d5d5d5;
+    color: #202020;
+    width: 50%;
+    margin: 150px auto;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 3em;
+    padding: 30px 30px 50px 30px;
+    border: 0.5em #202020 ridge;
+    a{
+        color: goldenrod;
+    }
+}
+a{
+    transition: 0.5s;
+}
+a:hover{
+    letter-spacing: 0.1em;
+}
