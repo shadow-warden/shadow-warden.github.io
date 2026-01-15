@@ -48,10 +48,14 @@ body{
     grid-template-columns:50% 50%;
     background-color: #202020;
 }
-.pfp_img{
-    img{
+#ProfileImg{
         width: 100%;
+        clip-path: inset(0 0 100% 0);  /* Start fully hidden */
     }
+#ProfileImg.loading {
+    /* Put the transition in this class so it only applies when loading into the class */
+    transition: clip-path 1s steps(10, end);
+    clip-path: inset(0 0 0% 0); /* Reveal from top to bottom */
 }
 @media (max-width:1080px) {
     .profile{
