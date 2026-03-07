@@ -1,5 +1,5 @@
 //quote array
-quotes=[
+quotes = [
     "We do not remember days, we remember moments. The richness of life lies in memories we have forgotten ― Cesare Pavese",
     "If you only do what is easy, your life will be hard.",
     "If there is no enemy inside, the enemy outside can do no harm.",
@@ -40,18 +40,19 @@ quotes=[
     "A moment of silence amidst the infinite",
     "You're no exception to love."
 ]
-function add_dots(){
+dot_amount = 135
+function add_dots() {
     var text = document.getElementById('page_footer');
-    if(text!=null){
-    for (let index = 0; index < 135; index++) {
-       text.innerHTML+=`<img src="images/dot.png" id="not">`
-    } 
+    if (text != null) {
+        for (let index = 0; index < dot_amount; index++) {
+            text.innerHTML += `<img src="images/dot.png" id="not">`
+        }
+    }
 }
-}
-function add_quote(){
-    var quote_area=document.getElementById('quotes');
-    if(quote_area!=null){
-        quote_area.innerHTML=quotes[Math.floor(Math.random()*quotes.length)]+"<br>quotes from vintage story launcher"
+function add_quote() {
+    var quote_area = document.getElementById('quotes');
+    if (quote_area != null) {
+        quote_area.innerHTML = quotes[Math.floor(Math.random() * quotes.length)] + "<br>quotes from vintage story launcher"
     }
 }
 add_dots()

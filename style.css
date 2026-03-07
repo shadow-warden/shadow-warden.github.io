@@ -1,21 +1,28 @@
 @font-face {
     font-family: 'PMD_font';
-    src:url('fonts/pokemon-md-full-version.woff') format('woff');
+    src: local('Gibson sans-serif'),
+        url('fonts/pokemon-md-full-version.woff') format('woff');
     font-weight: bold;
     font-style: bold;
-    }
-*{
-    color:#d5d5d5;
+}
+
+* {
+    color: #d5d5d5;
     margin: 0%;
 }
-body{
+
+body {
     /* font-family: "PMD_font"; */
     font-family: 'Gibson', sans-serif;
     background-color: #9CEACA;
 }
-.quotes{
+
+.quotes {
     color: #333333;
+    /* position:sticky; */
+    /* bottom: 0%; */
 }
+
 .banner {
     padding: 3em 0;
     padding: calc((30vh - 5.8em) / 2 + 1px) 0;
@@ -27,7 +34,8 @@ body{
     /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('') center; */
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #d5d5d5 center;
     background-size: cover;
-    h1{
+
+    h1 {
         background-color: transparent;
         border: .2em solid #FFFFFF;
         color: #FFFFFF;
@@ -40,69 +48,109 @@ body{
         text-shadow: 4px 4px #333333;
     }
 }
-.profile{
+
+.profile {
+
     margin: auto;
     width: 50%;
-    display: grid;
+    /* display: grid; */
     align-content: center;
-    grid-template-columns:50% 50%;
+    /* grid-template-columns:50% 50%; */
     background-color: #202020;
 }
-#ProfileImg{
-        width: 100%;
-        clip-path: inset(0 0 100% 0);  /* Start fully hidden */
-    }
+
+#ProfileImg {
+    width: 100%;
+    clip-path: inset(0 0 100% 0);
+    /* Start fully hidden */
+}
+
 #ProfileImg.loading {
     /* Put the transition in this class so it only applies when loading into the class */
     transition: clip-path 1s steps(10, end);
-    clip-path: inset(0 0 0% 0); /* Reveal from top to bottom */
+    clip-path: inset(0 0 0% 0);
+    /* Reveal from top to bottom */
 }
-@media (max-width:1080px) {
-    .profile{
-    width: 80%;
+
+/* @media (max-width:1080px) {
+    .profile {
+        width: 80%;
+    }
+} */
+
+.text {
+    padding: 0.5em;
+    font-size: 1.24rem;
+    border-radius: 2em;
+
+    p {
+        padding-bottom: 1%;
     }
 }
-.text{
-    /* empty */
-}
+
 @media (max-width: 1080px) {
-    body{
+    body {
         background-color: goldenrod;
     }
+
+    .project {
+        align-self: center !important;
+        width: 90% !important;
+        display: inline-table !important;
+    }
+
+    .project:hover {
+        background-color: #d5d5d5 !important;
+    }
 }
-.showcase_title{
+
+.showcase_title {
     text-align: center;
     font-size: 25px;
     display: block;
+    border-radius: 2em;
+    /* background-position: -6px;
+    background: url("https://terraria.wiki.gg/images/Grass-top-overworld.png") repeat-x;*/
 }
-.showcase{
+
+.showcase {
     font-size: larger;
     margin: 1em auto;
     background-color: #202020;
     width: 70%;
     display: table;
+    border-radius: 2em;
 }
-.project{
+
+.project {
     padding: 1em;
-    width:30%;
+    width: 30%;
     text-align: center;
     display: inline-table;
-    img{
-        width: 100%;
+
+    img {
+        height: 20em;
+        width: 20em;
     }
-    h1{
+
+    h1 {
         width: 100%;
         margin: auto;
     }
+
     transition-duration: 500ms;
 }
-.project:hover{
+
+.project:hover {
     background: #9CEACA;
-    h1{
+    /* border-radius: 2em 2em 0px 0px; */
+
+    h1 {
         color: #202020;
     }
 }
-.redirect_page{
+
+.redirect_page {
     background-color: #d5d5d5;
     color: #202020;
     width: 50%;
@@ -111,14 +159,17 @@ body{
     text-align: center;
     font-size: 3em;
     padding: 30px 30px 50px 30px;
-    border: 0.5em #202020 ridge;
-    a{
+    border: #202020;
+
+    a {
         color: goldenrod;
     }
 }
-a{
+
+a {
     transition: 0.5s;
 }
-a:hover{
+
+a:hover {
     letter-spacing: 0.1em;
 }
